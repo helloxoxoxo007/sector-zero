@@ -9,7 +9,19 @@ Open `index.html` directly in a browser — no build step, no server needed. Dou
 ## Repository
 
 GitHub: https://github.com/helloxoxoxo007/sector-zero  
-After every meaningful change: commit with a conventional message (`feat:`, `fix:`, `refactor:`) and push to `main`.
+Branch: `main` | Remote: `origin`
+
+**After every meaningful change, always commit and push.** This is non-negotiable — it ensures the project is never lost and any change can be reverted.
+
+Workflow after each feature, fix, or edit:
+1. `git add <changed files>` — stage only the relevant files (never `.claude/` or unrelated files)
+2. `git commit -m "<type>: <short description>"` — use conventional commit prefixes: `feat:`, `fix:`, `refactor:`, `style:`, `docs:`
+3. `git push origin main`
+
+Commit message rules:
+- First line: `type: short imperative summary` (50 chars max)
+- Be specific — e.g. `feat: add shield power-up with 3s cooldown`, not `feat: update game`
+- Multi-line body only when the *why* is non-obvious
 
 ## Architecture
 
